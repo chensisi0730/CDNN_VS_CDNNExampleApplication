@@ -1,0 +1,128 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{09C21E8B-47CE-3CAA-8224-844750867682}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>INSTALL</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\CEVA-XM6_SW\CDNN_XM6_NPRS_v20.3.0\CDNN\main\include;C:\CEVA-XM6_SW\CDNN_XM6_NPRS_v20.3.0\CDNN\main\..\..\Installs;C:\CEVA-XM6_SW\CDNN_XM6_NPRS_v20.3.0\CDNN\main\..\..\3rdparty;C:\CEVA-XM6_SW\CDNN_XM6_NPRS_v20.3.0\CDNN\main\CDNNExampleApplication\..\CDNNBin\Lib\Win32;C:\CEVA-XM6_SW\CDNN_XM6_NPRS_v20.3.0\CDNN\main\..\..\3rdparty\sdtguard\sgutilLib;C:\CEVA-XM6_SW\CDNN_XM6_NPRS_v20.3.0\CDNN\main\..\..\Installs\install_generic\Accelerators\CNNHWA;C:\CEVA-XM6_SW\CDNN_XM6_NPRS_v20.3.0\CDNN\main\CDNNExampleApplication\..\CDNNCommonDefines\Include;C:\CEVA-XM6_SW\CDNN_XM6_NPRS_v20.3.0\CDNN\main\CDNNExampleApplication\..\CDNNTools\CDNNUtility\Include;C:\CEVA-XM6_SW\CDNN_XM6_NPRS_v20.3.0\CDNN\main\CDNNManager\Interface\Include;C:\CEVA-XM6_SW\CDNN_XM6_NPRS_v20.3.0\CDNN\main\CDNNExampleApplication\hdr;C:\CEVA-XM6_SW\CDNN_XM6_NPRS_v20.3.0\CDNN\main\..\..\Installs\install_generic\include;C:\CEVA-XM6_SW\CDNN_XM6_NPRS_v20.3.0\CDNN\main\CDNNTools\CDNNAppUtility\hdr;C:\CEVA-XM6_SW\CDNN_XM6_NPRS_v20.3.0\CDNN\main\CDNNExampleApplication\..\CDNNInterface\External;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message></Message>
+      <Command>setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -DBUILD_TYPE=$(Configuration) -P cmake_install.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\CEVA-XM6_SW\CDNN_XM6_NPRS_v20.3.0\CDNN\main\include;C:\CEVA-XM6_SW\CDNN_XM6_NPRS_v20.3.0\CDNN\main\..\..\Installs;C:\CEVA-XM6_SW\CDNN_XM6_NPRS_v20.3.0\CDNN\main\..\..\3rdparty;C:\CEVA-XM6_SW\CDNN_XM6_NPRS_v20.3.0\CDNN\main\CDNNExampleApplication\..\CDNNBin\Lib\Win32;C:\CEVA-XM6_SW\CDNN_XM6_NPRS_v20.3.0\CDNN\main\..\..\3rdparty\sdtguard\sgutilLib;C:\CEVA-XM6_SW\CDNN_XM6_NPRS_v20.3.0\CDNN\main\..\..\Installs\install_generic\Accelerators\CNNHWA;C:\CEVA-XM6_SW\CDNN_XM6_NPRS_v20.3.0\CDNN\main\CDNNExampleApplication\..\CDNNCommonDefines\Include;C:\CEVA-XM6_SW\CDNN_XM6_NPRS_v20.3.0\CDNN\main\CDNNExampleApplication\..\CDNNTools\CDNNUtility\Include;C:\CEVA-XM6_SW\CDNN_XM6_NPRS_v20.3.0\CDNN\main\CDNNManager\Interface\Include;C:\CEVA-XM6_SW\CDNN_XM6_NPRS_v20.3.0\CDNN\main\CDNNExampleApplication\hdr;C:\CEVA-XM6_SW\CDNN_XM6_NPRS_v20.3.0\CDNN\main\..\..\Installs\install_generic\include;C:\CEVA-XM6_SW\CDNN_XM6_NPRS_v20.3.0\CDNN\main\CDNNTools\CDNNAppUtility\hdr;C:\CEVA-XM6_SW\CDNN_XM6_NPRS_v20.3.0\CDNN\main\CDNNExampleApplication\..\CDNNInterface\External;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message></Message>
+      <Command>setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -DBUILD_TYPE=$(Configuration) -P cmake_install.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\CEVA-XM6_SW\CDNN_XM6_NPRS_v20.3.0\CDNN\main\CMakeFiles\8f5a1ff72f2fb762c5c131bc04f5daac\INSTALL_force.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+cd .
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\CEVA-XM6_SW\CDNN_XM6_NPRS_v20.3.0\CDNN\main\CDNNExampleApplication\CMakeFiles\INSTALL_force</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+cd .
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\CEVA-XM6_SW\CDNN_XM6_NPRS_v20.3.0\CDNN\main\CDNNExampleApplication\CMakeFiles\INSTALL_force</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\CEVA-XM6_SW\CDNN_XM6_NPRS_v20.3.0\CDNN\main\CDNNExampleApplication\ALL_BUILD.vcxproj">
+      <Project>{A01EED95-1EDB-39B5-8417-C022FB14F133}</Project>
+      <Name>ALL_BUILD</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

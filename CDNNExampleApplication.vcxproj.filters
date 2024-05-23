@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\CEVA-XM6_SW\CDNN_XM6_NPRS_v20.3.0\CDNN\main\CDNNExampleApplication\src\ProcessAuxiliary.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\CEVA-XM6_SW\CDNN_XM6_NPRS_v20.3.0\CDNN\main\CDNNExampleApplication\src\inference.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\CEVA-XM6_SW\CDNN_XM6_NPRS_v20.3.0\CDNN\main\CDNNExampleApplication\src\mainApplication.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\CEVA-XM6_SW\CDNN_XM6_NPRS_v20.3.0\CDNN\main\CDNNExampleApplication\hdr\ProcessAuxiliary.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\CEVA-XM6_SW\CDNN_XM6_NPRS_v20.3.0\CDNN\main\CDNNExampleApplication\hdr\Visualize.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\CEVA-XM6_SW\CDNN_XM6_NPRS_v20.3.0\CDNN\main\CDNNExampleApplication\hdr\mainApplication.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\CEVA-XM6_SW\CDNN_XM6_NPRS_v20.3.0\CDNN\main\CDNNExampleApplication\cfg\InputConfiguration.cfg">
+      <Filter>cfg</Filter>
+    </None>
+    <None Include="C:\CEVA-XM6_SW\CDNN_XM6_NPRS_v20.3.0\CDNN\main\CDNNExampleApplication\cfg\InputConfigurationXM6HW.cfg">
+      <Filter>cfg</Filter>
+    </None>
+    <None Include="C:\CEVA-XM6_SW\CDNN_XM6_NPRS_v20.3.0\CDNN\main\CDNNExampleApplication\cfg\generatorCmdLine.cfg">
+      <Filter>cfg</Filter>
+    </None>
+    <None Include="cfg\InputConfiguration - 副本mobilenet.cfg">
+      <Filter>cfg</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{770D5886-D280-38BD-9C44-2DA108231212}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{BDEC7EAF-0106-3B84-9874-FBB17C42C643}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cfg">
+      <UniqueIdentifier>{CAC8CE25-1BB1-3246-B1A2-901D2E81FB56}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

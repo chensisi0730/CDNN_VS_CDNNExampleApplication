@@ -1,0 +1,6 @@
+
+
+>>>> Results
+input_image.jpg
+Labrador retriever	golden retriever	kuvasz	beagle	dalmatian, coach dog, carriage dog	
+0.54761	0.20123	0.20123	0.00861	0.00781	

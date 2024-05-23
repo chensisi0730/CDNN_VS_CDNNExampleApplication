@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ProfilerSettings>
+    <EventGroup command="" description="" enabled="false" name="Profiler Events">
+        <EventGroup command="memory" description="" enabled="false" name="Memory Events">
+            <EventGroup command="data" description="Count memory access events" enabled="false" name="Data Memory Access">
+                <Event command="int.read" description="Count internal data read events" enabled="false" name="Internal data read"/>
+                <Event command="int.write" description="Count internal data write events" enabled="false" name="Internal data write"/>
+                <Event command="ext.read" description="Count external data read events" enabled="false" name="External data read"/>
+                <Event command="ext.write" description="Count external data write events" enabled="false" name="External data write"/>
+            </EventGroup>
+            <EventGroup command="cache" description="" enabled="false" name="Cache Access Events">
+                <EventGroup command="program" description="" enabled="false" name="Program Cache">
+                    <Event command="read.hit" description="Count program cache read hit events" enabled="false" name="Program cache read hit"/>
+                    <Event command="read.miss" description="Count program cache read miss events" enabled="false" name="Program cache read miss"/>
+                    <Event command="write.hit" description="Count program cache write hit events" enabled="false" name="Program cache write hit"/>
+                    <Event command="write.miss" description="Count program cache write miss events" enabled="false" name="Program cache write miss"/>
+                    <Event command="pf.miss" description="Count program cache prefetch miss events" enabled="false" name="Program cache prefatch miss"/>
+                    <Event command="nonpf.miss" description="Count program cache none prefetch miss events" enabled="false" name="Program cache none prefatch miss"/>
+                </EventGroup>
+                <EventGroup command="data" description="" enabled="false" name="Data cache">
+                    <Event command="read.hit" description="Count data cache read hit events" enabled="false" name="Data cache read hit"/>
+                    <Event command="read.miss" description="Count data cache read miss events" enabled="false" name="Data cache read miss"/>
+                    <Event command="write.hit" description="Count data cache write hit events" enabled="false" name="Data cache write hit"/>
+                    <Event command="write.miss" description="Count data cache write miss events" enabled="false" name="Data cache write miss"/>
+                    <Event command="blockFill" description="Count data cache block fill events" enabled="false" name="Data cache block fill"/>
+                    <Event command="sop" description="Count data cache software operation events" enabled="false" name="Data cache software operation"/>
+                </EventGroup>
+            </EventGroup>
+        </EventGroup>
+        <EventGroup command="dma" description="" enabled="false" name="DMA Events">
+            <Event command="prio.0" description="Count DMA Priority 0 transaction events" enabled="false" name="DMA Priority 0"/>
+            <Event command="prio.1" description="Count DMA Priority 1 transaction events" enabled="false" name="DMA Priority 1"/>
+        </EventGroup>
+        <EventGroup command="stall" description="" enabled="false" name="Stall Events">
+            <EventGroup command="data" description="" enabled="false" name="Data Stall Events">
+                <Event command="bank" description="Count block/bank conflicts stall events" enabled="false" name="Block/Bank conflicts"/>
+                <Event command="las" description="Count load after store stall events" enabled="false" name="Load after store"/>
+                <Event command="wbf" description="Count write buffer full stall events" enabled="false" name="Write buffer full"/>
+                <Event command="extport.read" description="Count external data read inflicted events" enabled="false" name="External data read wait"/>
+                <Event command="io" description="Count I/O access stall events" enabled="false" name="I/O access"/>
+                <Event command="hist" description="Count histogram unit stall events (CEVA-XMx Architectures)" enabled="false" name="Histogram wait"/>
+                <Event command="barrier" description="Count barrier stall events" enabled="false" name="Barrier"/>
+                <Event command="exclusiveWrite" description="Count exclusive erite stall events" enabled="false" name="Exclusive Write"/>
+            </EventGroup>
+            <EventGroup command="code" description="" enabled="false" name="Program Stall Events">
+                <Event command="extport.read" description="External program read inflicted stall events" enabled="false" name="External program read wait"/>
+                <Event command="bubble" description="Bubble stall events (CEVA-TL4 achitectures)" enabled="false" name="Bubble wait"/>
+            </EventGroup>
+        </EventGroup>
+    </EventGroup>
+    <ProfilerRanges/>
+</ProfilerSettings>

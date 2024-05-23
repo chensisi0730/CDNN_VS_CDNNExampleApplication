@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="ASCII"?>
+<spoc:Target xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:spoc="http://www.ceva-dsp.com/spocModel">
+  <core name="CEVA-XM6">
+    <rtl name="@RTL_Version_Target@">
+      <categories xsi:type="spoc:Core">
+        <attributes xsi:type="spoc:EnumAttribute" name="Instructions Fetch-Line Size (Bit)" value="256"/>
+        <attributes xsi:type="spoc:EnumAttribute" name="BTB - number of ways" value="2"/>
+        <attributes xsi:type="spoc:EnumAttribute" name="BTB - number of entries" value="128"/>
+        <attributes xsi:type="spoc:EnumAttribute" name="NLO (Non Linear Operations)" value="2"/>
+      </categories>
+      <categories xsi:type="spoc:DMSS">
+        <attributes xsi:type="spoc:EnumAttribute" name="Data TCM - Size (KB)" value="@HW-CFG__DTCM_SIZE@"/>
+        <attributes xsi:type="spoc:EnumAttribute" name="Data TCM - Number of Blocks" value="4"/>
+        <attributes xsi:type="spoc:EnumAttribute" name="External Data Port (EDP) Width (bit)" value="128"/>
+        <attributes xsi:type="spoc:EnumAttribute" name="Auxiliary AXI Master Port (bit)" value="128"/>
+        <attributes xsi:type="spoc:EnumAttribute" name="External Device Access Port (EDAP) Width (bit)" value="128"/>
+        <attributes xsi:type="spoc:EnumAttribute" name="Auxiliary AXI Slave Port - Slave0 (bit)" value="256"/>
+        <attributes xsi:type="spoc:EnumAttribute" name="Auxiliary AXI Slave Port - Slave1 (bit)" value="256"/>
+        <attributes xsi:type="spoc:EnumAttribute" name="Auxiliary AXI Slave Port - Slave2 (bit)" value="256"/>
+        <attributes xsi:type="spoc:EnumAttribute" name="DMAN Configuration - DMA Manager Queue Count" value="8"/>
+        <attributes xsi:type="spoc:EnumAttribute" name="Number Of DPRAW &#x9;(Prot. Read-After-Write)" value="16"/>
+      </categories>
+      <categories xsi:type="spoc:PMSS">
+        <attributes xsi:type="spoc:EnumAttribute" name="Instruction TCM Size (KB)" value="@HW-CFG__PTCM_SIZE@"/>
+        <attributes xsi:type="spoc:EnumAttribute" name="Instruction Cache Size (KB)" value="@HW-CFG__PCACHE_SIZE@"/>
+        <attributes xsi:type="spoc:EnumAttribute" name="External Program Port (EPP) Width (bit)" value="128"/>
+        <attributes xsi:type="spoc:BooleanAttribute" name="Instruction Memories ECC Protection"/>
+      </categories>
+      <categories xsi:type="spoc:Xtend">
+        <attributes xsi:type="spoc:BooleanAttribute" name="CEVA-Xtend"/>
+        <attributes xsi:type="spoc:TextAttribute" name="CEVA-Xtend Project" value="" regex=""/>
+      </categories>
+      <categories xsi:type="spoc:SFLP">
+        <attributes xsi:type="spoc:EnumAttribute" name="Scalar Floating Point Units" value="@HW-CFG__FLP_SPU@"/>
+      </categories>
+      <categories xsi:type="spoc:VFLP">
+        <attributes xsi:type="spoc:EnumAttribute" name="Vector Floating Point Units" value="@HW-CFG__FLP_VPU@"/>
+      </categories>
+    </rtl>
+  </core>
+  <externalMemories>
+    <attributes xsi:type="spoc:EnumAttribute" name="Type" value="Shared"/>
+    <attributes xsi:type="spoc:TextAttribute" name="Block Name" value="DDR" regex=""/>
+    <attributes xsi:type="spoc:TextAttribute" name="Base Address" value="0x40000000" regex=""/>
+    <attributes xsi:type="spoc:TextAttribute" name="Size (bytes)" value="0x20000000" regex=""/>
+    <attributes xsi:type="spoc:TextAttribute" name="Latency (cycles)" value="@PLATFORM-CONFIGURATION__DDR_FIRST_DELAY@" regex=""/>
+    <attributes xsi:type="spoc:TextAttribute" name="Middle Access Latency (cycles)" value="@PLATFORM-CONFIGURATION__DDR_SECOND_DELAY@" regex=""/>
+    <attributes xsi:type="spoc:BooleanAttribute" name="Read Only"/>
+  </externalMemories>
+  <externalMemories>
+    <attributes xsi:type="spoc:EnumAttribute" name="Type" value="Shared"/>
+    <attributes xsi:type="spoc:TextAttribute" name="Block Name" value="SRAM" regex="^[_a-zA-Z][\w\W\d\s]*"/>
+    <attributes xsi:type="spoc:TextAttribute" name="Base Address" value="1608515584" regex="^(0x)?(0X)?[0-9]*$"/>
+    <attributes xsi:type="spoc:TextAttribute" name="Size (bytes)" value="0x200000" regex="^(0x)?(0X)?[0-9]*$"/>
+    <attributes xsi:type="spoc:TextAttribute" name="Latency (cycles)" value="@PLATFORM-CONFIGURATION__SRAM_FIRST_DELAY@" regex="^(0x)?(0X)?[0-9]*$"/>
+    <attributes xsi:type="spoc:TextAttribute" name="Middle Access Latency (cycles)" value="@PLATFORM-CONFIGURATION__SRAM_SECOND_DELAY@" regex="^(0x)?(0X)?[0-9]*$"/>
+    <attributes xsi:type="spoc:BooleanAttribute" name="Read Only"/>
+  </externalMemories>
+</spoc:Target>

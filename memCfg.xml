@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<memories_defines>
+	<memory_def>
+		<address>0x40000000</address>
+		<size>0x40000000B</size>
+		<type>shared</type>
+		<latency>
+			<first_access>0</first_access>
+			<middle_access>0</middle_access>
+		</latency>
+	</memory_def>
+
+	<memory_def>
+		<address>0x5fe00000</address>
+		<size>0x200000B</size>
+		<type>shared</type>
+		<latency>
+			<first_access>0</first_access>
+			<middle_access>0</middle_access>
+		</latency>
+	</memory_def>
+</memories_defines>

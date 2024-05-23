@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<memories_defines>
+  <memory_def>
+    <address>0x40000000</address>
+    <size>0x1F000000B</size>
+    <type>shared</type>
+    <latency>
+      <first_access>211</first_access>
+      <middle_access>1</middle_access>
+    </latency>
+  </memory_def>
+
+  <memory_def>
+    <address>0x5F000000</address>
+    <size>0x00E00000B</size>
+    <type>code</type>
+    <latency>
+      <first_access>211</first_access>
+      <middle_access>1</middle_access>
+    </latency>
+  </memory_def>
+
+<memory_def>
+  <address>0x5FE00000</address>
+  <size>0x00200000B</size>
+  <type>shared</type>
+  <latency>
+    <first_access>41</first_access>
+    <middle_access>1</middle_access>
+  </latency>
+</memory_def>
+</memories_defines>
+

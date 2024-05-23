@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\CEVA-XM6_SW\CDNN_XM6_NPRS_v20.3.0\CDNN\main\CMakeFiles\8f5a1ff72f2fb762c5c131bc04f5daac\INSTALL_force.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{91566672-39AF-3095-B4F5-71586CC001A0}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

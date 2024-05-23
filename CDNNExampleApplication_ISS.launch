@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="com.ceva.tcf.debug.ui.target.launchConfig">
+<booleanAttribute key="com.ceva.tcf.launch.BIG_ENDIAN" value="false"/>
+<stringAttribute key="com.ceva.tcf.launch.CODE_MEM" value=""/>
+<stringAttribute key="com.ceva.tcf.launch.CORE_TYPE" value=""/>
+<stringAttribute key="com.ceva.tcf.launch.DATA_MEM" value=""/>
+<stringAttribute key="com.ceva.tcf.launch.DEBUG_SCRIPT" value=""/>
+<booleanAttribute key="com.ceva.tcf.launch.ENABLE_LOGGING" value="false"/>
+<booleanAttribute key="com.ceva.tcf.launch.ENABLE_PROFILER" value="false"/>
+<stringAttribute key="com.ceva.tcf.launch.FEATURE" value=""/>
+<stringAttribute key="com.ceva.tcf.launch.FLP_NUM" value=""/>
+<booleanAttribute key="com.ceva.tcf.launch.INFER_TARGET_DESCRIPTION" value="false"/>
+<booleanAttribute key="com.ceva.tcf.launch.LOAD_COFF" value="true"/>
+<stringAttribute key="com.ceva.tcf.launch.LOG_FILE" value=""/>
+<stringAttribute key="com.ceva.tcf.launch.MAIN_CORE" value="CEVA-XM6"/>
+<stringAttribute key="com.ceva.tcf.launch.PROFILE" value=""/>
+<stringAttribute key="com.ceva.tcf.launch.PROFILE_PATH" value=""/>
+<stringAttribute key="com.ceva.tcf.launch.RTL_COMP" value=""/>
+<stringAttribute key="com.ceva.tcf.launch.TARGET_DESCRIPTION" value="C:/CEVA-XM6_SW/CDNN_XM6_NPRS_v20.3.0/CDNN/main/CDNNExampleApplication/XM6/XM4Cmake.xml"/>
+<stringAttribute key="com.ceva.tcf.launch.TARGET_DESCRIPTION_SIMPLE" value="C:/CEVA-XM6_SW/CDNN_XM6_NPRS_v20.3.0/CDNN/main/CDNNExampleApplication/XM6/XM4Cmake.xml"/>
+<booleanAttribute key="com.ceva.tcf.launch.USE_XTEND" value="false"/>
+<stringAttribute key="com.ceva.tcf.launch.XTEND" value=""/>
+<booleanAttribute key="com.ceva.tcf.launch.no_action" value="false"/>
+<booleanAttribute key="com.ceva.tcf.launch.no_coff" value="false"/>
+<booleanAttribute key="com.ceva.tcf.launch.reset" value="true"/>
+<booleanAttribute key="com.ceva.tcf.launch.symbols_only" value="false"/>
+<stringAttribute key="org.eclipse.cdt.launch.PROGRAM_NAME" value="C:/CEVA-XM6_SW/CDNN_XM6_NPRS_v20.3.0/CDNN/main/CDNNExampleApplication/XM6/CDNNExampleApplication.a"/>
+<mapAttribute key="org.eclipse.debug.core.environmentVariables">
+<mapEntry key="ceva_tcfagent_core_type" value=""/>
+<mapEntry key="ceva_tcfagent_debug" value="C:/CEVA-XM6_SW/CDNN_XM6_NPRS_v20.3.0/CDNN/main/FreeRTOS/CEVA_FreeRTOS_example_app/cevaxm6/FreeRTOS_sim.dbg"/>
+<mapEntry key="ceva_tcfagent_reset_core" value="true"/>
+<mapEntry key="ceva_tcfagent_stop_core" value="true"/>
+<mapEntry key="ceva_tcfagent_symbols_only" value="false"/>
+<mapEntry key="ceva_tcfagent_target_bigendian" value="false"/>
+<mapEntry key="ceva_tcfagent_target_enable_profiler" value="false"/>
+<mapEntry key="ceva_tcfagent_target_nocoff" value="false"/>
+<mapEntry key="ceva_tcfagent_target_profiler_setup" value="Toolbox Generic Profiler Setup Configuration"/>
+<mapEntry key="ceva_tcfagent_target_xml" value="C:/CEVA-XM6_SW/CDNN_XM6_NPRS_v20.3.0/CDNN/main/CDNNExampleApplication/XM6/XM4Cmake.xml"/>
+</mapAttribute>
+<booleanAttribute key="org.eclipse.tcf.debug.AttachChildren" value="true"/>
+<booleanAttribute key="org.eclipse.tcf.debug.DisconnectOnCtxExit" value="true"/>
+<stringAttribute key="org.eclipse.tcf.debug.ProgramArguments" value=""/>
+<stringAttribute key="org.eclipse.tcf.debug.ProgramFile" value="C:/CEVA-XM6_SW/CDNN_XM6_NPRS_v20.3.0/CDNN/main/CDNNExampleApplication/CDNNExampleApplication.a"/>
+<booleanAttribute key="org.eclipse.tcf.debug.RunLocalAgent" value="false"/>
+<booleanAttribute key="org.eclipse.tcf.debug.StopAtEntry" value="false"/>
+<booleanAttribute key="org.eclipse.tcf.debug.StopAtMain" value="true"/>
+<booleanAttribute key="org.eclipse.tcf.debug.UseLocalAgent" value="true"/>
+<booleanAttribute key="org.eclipse.tcf.debug.UseTerminal" value="true"/>
+<stringAttribute key="org.eclipse.tcf.debug.WorkingDirectory" value="C:/CEVA-XM6_SW/CDNN_XM6_NPRS_v20.3.0/CDNN/main/CDNNExampleApplication/XM6"/>
+</launchConfiguration>

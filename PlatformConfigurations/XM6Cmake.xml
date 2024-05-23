@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Core Name="CEVA-XM6">
+  <Category Name="HW Configuration">
+    <Attribute>
+      <Name>Use CEVA-Xtend</Name>
+      <Value>No</Value>
+    </Attribute>
+  </Category>
+  <Category Name="Memory">
+    <Attribute>
+      <Name>Internal Code Size</Name>
+      <Value>128KB</Value>
+    </Attribute>
+    <Attribute>
+      <Name>Internal Data Size</Name>
+      <Value>512KB</Value>
+    </Attribute>
+  </Category>
+  <Category Name="Execution Mode">
+    <Attribute>
+      <Name>Execution Mode</Name>
+      <Value>Instruction Set Mode</Value>
+    </Attribute>
+  </Category>
+</Core>

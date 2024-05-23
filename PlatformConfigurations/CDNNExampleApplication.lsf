@@ -1,0 +1,89 @@
+classes:
+
+data			[D:00000000, D:0007ffff] internal
+.IF CEVA_HOST_IO_ENABLED
+.IF CNNHWA
+data_ext_pcie	[d:e0000000,d:e0ffffff] external  ; PCIE 
+.ELSE
+data_ext_pcie	[d:20000000,d:20ffffff] external  ; PCIE 
+.ENDIF
+.ENDIF
+code			[C:00000000, C:0001ffff] internal
+data_ext		[D:40000000, D:5effffff] external
+code_ext		[C:5f000000, C:5fdfffff] external
+data_l2			[D:5fe00000, D:5fffffff] external
+
+
+code:
+	inttbl  
+	call_saved_store_restore_sect   lo 
+	
+    ctor_sect   	
+    crtn_ctor_sect  
+    dtor_sect   
+    crtn_dtor_sect
+    
+    CSL_INTERNAL_CODE_ALLOCATION	align 0x10
+    
+	
+data:
+	dummy_sect  	lo size 0x8 
+	.data   		lo align 0x4 
+	.no_init    	lo align 0x4 
+	ARG_SECT    	lo align 0x4 
+	ARG_SECT_END    at next noload 
+	
+	__STACK_SECT    lo align 0x4 size 0x4000 
+
+.IF CEVA_HOST_IO_ENABLED
+	int_fileio_data align 0x4 
+.ENDIF
+	
+	ctors   		align 0x4 at next  
+	dtors   		align 0x4 at next 
+	
+	
+	CSL_INTERNAL_DATA_ALLOCATION			at next
+	CDNN_const_Data							at next
+
+	CDNN_INTERNAL_SYSTEM_MEMORY_ALLOCATION at next	 
+	CDNN_INTERNAL_START_MEMORY_ALLOCATION at next 
+	CDNN_INTERNAL_END_MEMORY_ALLOCATION hi 	
+	
+data_ext: 
+
+	const_data      align 0x4
+	data_clone  		align 0x4 clone .data
+	const_data_clone    align 0x4 clone const_data
+	.bss    			align 0x4 
+
+	__MALLOC_SECT     	align 0x4 noload size 0x5000000
+			
+	CDNN_EXTERNAL_MEMORY_ALLOCATION_STATIC  
+	CDNN_EXTERNAL_START_MEMORY_ALLOCATION_BSS 	at next 
+	CDNN_EXTERNAL_END_MEMORY_ALLOCATION_BSS 	hi 	
+
+
+.IF CEVA_HOST_IO_ENABLED
+data_ext_pcie:
+.IF CNNHWA
+	AMF_shared_info_mem_sect at 0xe0000000 size 0x10000 noload 
+.ELSE
+	AMF_shared_info_mem_sect at 0x20000000 size 0x10000 noload 
+.ENDIF
+	ext_fileio_data align 0x4 noload
+.ENDIF
+	
+code_ext:
+
+	;inttbl 
+	CSL_EXTERNAL_CODE_ALLOCATION		align 0x10
+	.text								align 0x10
+	CDNN_MEMORY_CODE_SECTION  			align 0x10
+
+data_l2: 
+	;This is an example illustrating how to set 0 byte L2 memory (if you don't use it)
+	;Atually the memory defined below is 2 bytes but CDNN will deduct 2 bytes from real memory size (to get a 0 size l2 memory)
+	;This is because by using *.lsf we can't set a memory space less than 2 bytes. 
+	CDNN_L2_START_MEMORY_ALLOCATION_BSS at 0x5ffffffe
+	CDNN_L2_END_MEMORY_ALLOCATION_BSS	at 0x5fffffff

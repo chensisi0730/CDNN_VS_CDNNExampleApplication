@@ -1,0 +1,209 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{24CC62E3-91AC-3D45-8675-39A9C4DD5C4C}</ProjectGuid>
+    <SccProjectName>Perforce Project</SccProjectName>
+    <SccLocalPath>C:/CEVA-XM6_SW/CDNN_XM6_NPRS_v20.3.0/CDNN/main/CDNNExampleApplication</SccLocalPath>
+    <SccProvider>MSSCCI:Perforce SCM</SccProvider>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>CDNNExampleApplication</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\CEVA-XM6_SW\CDNN_XM6_NPRS_v20.3.0\CDNN\main\CDNNExampleApplication\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CDNNExampleApplication.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CDNNExampleApplication</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\CEVA-XM6_SW\CDNN_XM6_NPRS_v20.3.0\CDNN\main\CDNNExampleApplication\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CDNNExampleApplication.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CDNNExampleApplication</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\CEVA-XM6_SW\CDNN_XM6_NPRS_v20.3.0\CDNN\main\include;C:\CEVA-XM6_SW\CDNN_XM6_NPRS_v20.3.0\CDNN\main\..\..\Installs;C:\CEVA-XM6_SW\CDNN_XM6_NPRS_v20.3.0\CDNN\main\..\..\3rdparty;C:\CEVA-XM6_SW\CDNN_XM6_NPRS_v20.3.0\CDNN\main\CDNNExampleApplication\..\CDNNBin\Lib\Win32;C:\CEVA-XM6_SW\CDNN_XM6_NPRS_v20.3.0\CDNN\main\..\..\3rdparty\sdtguard\sgutilLib;C:\CEVA-XM6_SW\CDNN_XM6_NPRS_v20.3.0\CDNN\main\..\..\Installs\install_generic\Accelerators\CNNHWA;C:\CEVA-XM6_SW\CDNN_XM6_NPRS_v20.3.0\CDNN\main\CDNNExampleApplication\..\CDNNCommonDefines\Include;C:\CEVA-XM6_SW\CDNN_XM6_NPRS_v20.3.0\CDNN\main\CDNNExampleApplication\..\CDNNTools\CDNNUtility\Include;C:\CEVA-XM6_SW\CDNN_XM6_NPRS_v20.3.0\CDNN\main\CDNNManager\Interface\Include;C:\CEVA-XM6_SW\CDNN_XM6_NPRS_v20.3.0\CDNN\main\CDNNExampleApplication\hdr;C:\CEVA-XM6_SW\CDNN_XM6_NPRS_v20.3.0\CDNN\main\..\..\Installs\install_generic\include;C:\CEVA-XM6_SW\CDNN_XM6_NPRS_v20.3.0\CDNN\main\CDNNTools\CDNNAppUtility\hdr;C:\CEVA-XM6_SW\CDNN_XM6_NPRS_v20.3.0\CDNN\main\CDNNExampleApplication\..\CDNNInterface\External;C:\CEVA-XM6_SW\CDNN_XM6_NPRS_v20.3.0\CDNN\main\CDNNExampleApplication\include;C:\CEVA-XM6_SW\CDNN_XM6_NPRS_v20.3.0\CDNN\main\CDNNTools\CDNNAppUtility\include;C:\CEVA-XM6_SW\CDNN_XM6_NPRS_v20.3.0\CDNN\main\CDNNTools\CDNNUtility\include;C:\CEVA-XM6_SW\CDNN_XM6_NPRS_v20.3.0\CDNN\main\CDNNKernelModule\UserXM6OperatorLibrary\include;C:\CEVA-XM6_SW\CDNN_XM6_NPRS_v20.3.0\CDNN\main\CDNNOperationLibrary\UserPCOperationLibrary\include;C:\CEVA-XM6_SW\CDNN_XM6_NPRS_v20.3.0\CDNN\main\CDNNKernelModule\UserPCOperatorLibrary\include;C:\CEVA-XM6_SW\CDNN_XM6_NPRS_v20.3.0\CDNN\main\CDNNNodeLibrary\UserNodeLibrary\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <CallingConvention>Cdecl</CallingConvention>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <EnablePREfast>false</EnablePREfast>
+      <ErrorReporting>Prompt</ErrorReporting>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FloatingPointModel>Precise</FloatingPointModel>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <MinimalRebuild>false</MinimalRebuild>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <OmitFramePointers>false</OmitFramePointers>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_CRT_SECURE_NO_WARNINGS;_CONSOLE;_LIB;CDNN_PC_SIMULATION;UNICODE;_UNICODE;APP_SRC_DIR="C:/CEVA-XM6_SW/CDNN_XM6_NPRS_v20.3.0/CDNN/main/CDNNExampleApplication";CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_CRT_SECURE_NO_WARNINGS;_CONSOLE;_LIB;CDNN_PC_SIMULATION;UNICODE;_UNICODE;APP_SRC_DIR=\"C:/CEVA-XM6_SW/CDNN_XM6_NPRS_v20.3.0/CDNN/main/CDNNExampleApplication\";CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\CEVA-XM6_SW\CDNN_XM6_NPRS_v20.3.0\CDNN\main\include;C:\CEVA-XM6_SW\CDNN_XM6_NPRS_v20.3.0\CDNN\main\..\..\Installs;C:\CEVA-XM6_SW\CDNN_XM6_NPRS_v20.3.0\CDNN\main\..\..\3rdparty;C:\CEVA-XM6_SW\CDNN_XM6_NPRS_v20.3.0\CDNN\main\CDNNExampleApplication\..\CDNNBin\Lib\Win32;C:\CEVA-XM6_SW\CDNN_XM6_NPRS_v20.3.0\CDNN\main\..\..\3rdparty\sdtguard\sgutilLib;C:\CEVA-XM6_SW\CDNN_XM6_NPRS_v20.3.0\CDNN\main\..\..\Installs\install_generic\Accelerators\CNNHWA;C:\CEVA-XM6_SW\CDNN_XM6_NPRS_v20.3.0\CDNN\main\CDNNExampleApplication\..\CDNNCommonDefines\Include;C:\CEVA-XM6_SW\CDNN_XM6_NPRS_v20.3.0\CDNN\main\CDNNExampleApplication\..\CDNNTools\CDNNUtility\Include;C:\CEVA-XM6_SW\CDNN_XM6_NPRS_v20.3.0\CDNN\main\CDNNManager\Interface\Include;C:\CEVA-XM6_SW\CDNN_XM6_NPRS_v20.3.0\CDNN\main\CDNNExampleApplication\hdr;C:\CEVA-XM6_SW\CDNN_XM6_NPRS_v20.3.0\CDNN\main\..\..\Installs\install_generic\include;C:\CEVA-XM6_SW\CDNN_XM6_NPRS_v20.3.0\CDNN\main\CDNNTools\CDNNAppUtility\hdr;C:\CEVA-XM6_SW\CDNN_XM6_NPRS_v20.3.0\CDNN\main\CDNNExampleApplication\..\CDNNInterface\External;C:\CEVA-XM6_SW\CDNN_XM6_NPRS_v20.3.0\CDNN\main\CDNNExampleApplication\include;C:\CEVA-XM6_SW\CDNN_XM6_NPRS_v20.3.0\CDNN\main\CDNNTools\CDNNAppUtility\include;C:\CEVA-XM6_SW\CDNN_XM6_NPRS_v20.3.0\CDNN\main\CDNNTools\CDNNUtility\include;C:\CEVA-XM6_SW\CDNN_XM6_NPRS_v20.3.0\CDNN\main\CDNNKernelModule\UserXM6OperatorLibrary\include;C:\CEVA-XM6_SW\CDNN_XM6_NPRS_v20.3.0\CDNN\main\CDNNOperationLibrary\UserPCOperationLibrary\include;C:\CEVA-XM6_SW\CDNN_XM6_NPRS_v20.3.0\CDNN\main\CDNNKernelModule\UserPCOperatorLibrary\include;C:\CEVA-XM6_SW\CDNN_XM6_NPRS_v20.3.0\CDNN\main\CDNNNodeLibrary\UserNodeLibrary\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\CEVA-XM6_SW\CDNN_XM6_NPRS_v20.3.0\CDNN\main\include;C:\CEVA-XM6_SW\CDNN_XM6_NPRS_v20.3.0\CDNN\main\..\..\Installs;C:\CEVA-XM6_SW\CDNN_XM6_NPRS_v20.3.0\CDNN\main\..\..\3rdparty;C:\CEVA-XM6_SW\CDNN_XM6_NPRS_v20.3.0\CDNN\main\CDNNExampleApplication\..\CDNNBin\Lib\Win32;C:\CEVA-XM6_SW\CDNN_XM6_NPRS_v20.3.0\CDNN\main\..\..\3rdparty\sdtguard\sgutilLib;C:\CEVA-XM6_SW\CDNN_XM6_NPRS_v20.3.0\CDNN\main\..\..\Installs\install_generic\Accelerators\CNNHWA;C:\CEVA-XM6_SW\CDNN_XM6_NPRS_v20.3.0\CDNN\main\CDNNExampleApplication\..\CDNNCommonDefines\Include;C:\CEVA-XM6_SW\CDNN_XM6_NPRS_v20.3.0\CDNN\main\CDNNExampleApplication\..\CDNNTools\CDNNUtility\Include;C:\CEVA-XM6_SW\CDNN_XM6_NPRS_v20.3.0\CDNN\main\CDNNManager\Interface\Include;C:\CEVA-XM6_SW\CDNN_XM6_NPRS_v20.3.0\CDNN\main\CDNNExampleApplication\hdr;C:\CEVA-XM6_SW\CDNN_XM6_NPRS_v20.3.0\CDNN\main\..\..\Installs\install_generic\include;C:\CEVA-XM6_SW\CDNN_XM6_NPRS_v20.3.0\CDNN\main\CDNNTools\CDNNAppUtility\hdr;C:\CEVA-XM6_SW\CDNN_XM6_NPRS_v20.3.0\CDNN\main\CDNNExampleApplication\..\CDNNInterface\External;C:\CEVA-XM6_SW\CDNN_XM6_NPRS_v20.3.0\CDNN\main\CDNNExampleApplication\include;C:\CEVA-XM6_SW\CDNN_XM6_NPRS_v20.3.0\CDNN\main\CDNNTools\CDNNAppUtility\include;C:\CEVA-XM6_SW\CDNN_XM6_NPRS_v20.3.0\CDNN\main\CDNNTools\CDNNUtility\include;C:\CEVA-XM6_SW\CDNN_XM6_NPRS_v20.3.0\CDNN\main\CDNNKernelModule\UserXM6OperatorLibrary\include;C:\CEVA-XM6_SW\CDNN_XM6_NPRS_v20.3.0\CDNN\main\CDNNOperationLibrary\UserPCOperationLibrary\include;C:\CEVA-XM6_SW\CDNN_XM6_NPRS_v20.3.0\CDNN\main\CDNNKernelModule\UserPCOperatorLibrary\include;C:\CEVA-XM6_SW\CDNN_XM6_NPRS_v20.3.0\CDNN\main\CDNNNodeLibrary\UserNodeLibrary\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>libjpeg.lib;CDNNTarget.lib;CDNNManager.lib;..\CDNNBin\Lib\Win32\Debug\CDNNAppUtility.lib;CDNNKernelModuleCommon.lib;CDNNDevice.lib;CDNNPCKernelModule.lib;..\CDNNBin\Lib\Win32\Debug\CDNNUtility.lib;CDNNInfrastructure.lib;CDNNXM6Device.lib;..\CDNNBin\Dll\Win32\Debug\UserXM6OperatorLibrary.lib;CDNNNeuProSDevice.lib;..\CDNNBin\Dll\Win32\Debug\UserPCOperationLibrary.lib;..\CDNNBin\Dll\Win32\Debug\UserPCOperatorLibrary.lib;..\CDNNBin\Dll\Win32\Debug\UserNodeLibrary.lib;..\..\..\Installs\install_generic\lib\Win32\platform_mgrd.lib;..\..\..\Installs\install_generic\Accelerators\NeuProS\NeuProSDriver\lib\Win32\CNNNeuProRuntimed.lib;..\CDNNTools\CDNNAppUtility\3rdparty\libjpeg\Windows\Win32\$(Configuration)\libjpeg.lib;..\..\..\Installs\install_xm6\lib\dma_simulator_win32d.lib;..\..\..\Installs\install_xm6\lib\csl_win32d.lib;C:\CEVA-ToolBox\V18_NeuPro\XM\cevatools\bin\..\fis\ceva-xm6\lib\vs2013\xm6Core_fisd.lib;..\CDNNBin\Lib\Win32\Debug\CDNNUtility.lib;CDNNNeuProSDevice.lib;..\CDNNBin\Lib\$(Platform)\$(Configuration)\CDNNTarget.lib;..\CDNNBin\Lib\$(Platform)\$(Configuration)\CDNNManager.lib;..\CDNNBin\Lib\$(Platform)\$(Configuration)\CDNNDevice.lib;..\CDNNBin\Lib\$(Platform)\$(Configuration)\CDNNInfrastructure.lib;..\CDNNBin\Lib\$(Platform)\$(Configuration)\CDNNKernelModuleCommon.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:/CEVA-XM6_SW/CDNN_XM6_NPRS_v20.3.0/CDNN/main/../../Installs/install_generic/lib;C:/CEVA-XM6_SW/CDNN_XM6_NPRS_v20.3.0/CDNN/main/../../Installs/install_generic/lib/$(Configuration);C:/CEVA-XM6_SW/CDNN_XM6_NPRS_v20.3.0/CDNN/main/../../Installs/install_generic/lib/Win32;C:/CEVA-XM6_SW/CDNN_XM6_NPRS_v20.3.0/CDNN/main/../../Installs/install_generic/lib/Win32/$(Configuration);C:/CEVA-XM6_SW/CDNN_XM6_NPRS_v20.3.0/CDNN/main/CDNNExampleApplication/../CDNNBin/Lib/Win32;C:/CEVA-XM6_SW/CDNN_XM6_NPRS_v20.3.0/CDNN/main/CDNNExampleApplication/../CDNNBin/Lib/Win32/$(Configuration);C:/CEVA-XM6_SW/CDNN_XM6_NPRS_v20.3.0/CDNN/main/CDNNExampleApplication/../CDNNBin/Dll/Win32;C:/CEVA-XM6_SW/CDNN_XM6_NPRS_v20.3.0/CDNN/main/CDNNExampleApplication/../CDNNBin/Dll/Win32/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/CEVA-XM6_SW/CDNN_XM6_NPRS_v20.3.0/CDNN/main/CDNNExampleApplication/Debug/CDNNExampleApplication.lib</ImportLibrary>
+      <LargeAddressAware>true</LargeAddressAware>
+      <ProgramDataBaseFile>C:/CEVA-XM6_SW/CDNN_XM6_NPRS_v20.3.0/CDNN/main/CDNNExampleApplication/Debug/CDNNExampleApplication.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\CEVA-XM6_SW\CDNN_XM6_NPRS_v20.3.0\CDNN\main\include;C:\CEVA-XM6_SW\CDNN_XM6_NPRS_v20.3.0\CDNN\main\..\..\Installs;C:\CEVA-XM6_SW\CDNN_XM6_NPRS_v20.3.0\CDNN\main\..\..\3rdparty;C:\CEVA-XM6_SW\CDNN_XM6_NPRS_v20.3.0\CDNN\main\CDNNExampleApplication\..\CDNNBin\Lib\Win32;C:\CEVA-XM6_SW\CDNN_XM6_NPRS_v20.3.0\CDNN\main\..\..\3rdparty\sdtguard\sgutilLib;C:\CEVA-XM6_SW\CDNN_XM6_NPRS_v20.3.0\CDNN\main\..\..\Installs\install_generic\Accelerators\CNNHWA;C:\CEVA-XM6_SW\CDNN_XM6_NPRS_v20.3.0\CDNN\main\CDNNExampleApplication\..\CDNNCommonDefines\Include;C:\CEVA-XM6_SW\CDNN_XM6_NPRS_v20.3.0\CDNN\main\CDNNExampleApplication\..\CDNNTools\CDNNUtility\Include;C:\CEVA-XM6_SW\CDNN_XM6_NPRS_v20.3.0\CDNN\main\CDNNManager\Interface\Include;C:\CEVA-XM6_SW\CDNN_XM6_NPRS_v20.3.0\CDNN\main\CDNNExampleApplication\hdr;C:\CEVA-XM6_SW\CDNN_XM6_NPRS_v20.3.0\CDNN\main\..\..\Installs\install_generic\include;C:\CEVA-XM6_SW\CDNN_XM6_NPRS_v20.3.0\CDNN\main\CDNNTools\CDNNAppUtility\hdr;C:\CEVA-XM6_SW\CDNN_XM6_NPRS_v20.3.0\CDNN\main\CDNNExampleApplication\..\CDNNInterface\External;C:\CEVA-XM6_SW\CDNN_XM6_NPRS_v20.3.0\CDNN\main\CDNNExampleApplication\include;C:\CEVA-XM6_SW\CDNN_XM6_NPRS_v20.3.0\CDNN\main\CDNNTools\CDNNAppUtility\include;C:\CEVA-XM6_SW\CDNN_XM6_NPRS_v20.3.0\CDNN\main\CDNNTools\CDNNUtility\include;C:\CEVA-XM6_SW\CDNN_XM6_NPRS_v20.3.0\CDNN\main\CDNNKernelModule\UserXM6OperatorLibrary\include;C:\CEVA-XM6_SW\CDNN_XM6_NPRS_v20.3.0\CDNN\main\CDNNOperationLibrary\UserPCOperationLibrary\include;C:\CEVA-XM6_SW\CDNN_XM6_NPRS_v20.3.0\CDNN\main\CDNNKernelModule\UserPCOperatorLibrary\include;C:\CEVA-XM6_SW\CDNN_XM6_NPRS_v20.3.0\CDNN\main\CDNNNodeLibrary\UserNodeLibrary\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <CallingConvention>Cdecl</CallingConvention>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <EnablePREfast>false</EnablePREfast>
+      <ErrorReporting>Prompt</ErrorReporting>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FloatingPointModel>Precise</FloatingPointModel>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <OmitFramePointers>false</OmitFramePointers>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <WarningLevel>Level3</WarningLevel>
+      <WholeProgramOptimization>true</WholeProgramOptimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;_CONSOLE;_LIB;CDNN_PC_SIMULATION;UNICODE;_UNICODE;APP_SRC_DIR="C:/CEVA-XM6_SW/CDNN_XM6_NPRS_v20.3.0/CDNN/main/CDNNExampleApplication";CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;_CONSOLE;_LIB;CDNN_PC_SIMULATION;UNICODE;_UNICODE;APP_SRC_DIR=\"C:/CEVA-XM6_SW/CDNN_XM6_NPRS_v20.3.0/CDNN/main/CDNNExampleApplication\";CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\CEVA-XM6_SW\CDNN_XM6_NPRS_v20.3.0\CDNN\main\include;C:\CEVA-XM6_SW\CDNN_XM6_NPRS_v20.3.0\CDNN\main\..\..\Installs;C:\CEVA-XM6_SW\CDNN_XM6_NPRS_v20.3.0\CDNN\main\..\..\3rdparty;C:\CEVA-XM6_SW\CDNN_XM6_NPRS_v20.3.0\CDNN\main\CDNNExampleApplication\..\CDNNBin\Lib\Win32;C:\CEVA-XM6_SW\CDNN_XM6_NPRS_v20.3.0\CDNN\main\..\..\3rdparty\sdtguard\sgutilLib;C:\CEVA-XM6_SW\CDNN_XM6_NPRS_v20.3.0\CDNN\main\..\..\Installs\install_generic\Accelerators\CNNHWA;C:\CEVA-XM6_SW\CDNN_XM6_NPRS_v20.3.0\CDNN\main\CDNNExampleApplication\..\CDNNCommonDefines\Include;C:\CEVA-XM6_SW\CDNN_XM6_NPRS_v20.3.0\CDNN\main\CDNNExampleApplication\..\CDNNTools\CDNNUtility\Include;C:\CEVA-XM6_SW\CDNN_XM6_NPRS_v20.3.0\CDNN\main\CDNNManager\Interface\Include;C:\CEVA-XM6_SW\CDNN_XM6_NPRS_v20.3.0\CDNN\main\CDNNExampleApplication\hdr;C:\CEVA-XM6_SW\CDNN_XM6_NPRS_v20.3.0\CDNN\main\..\..\Installs\install_generic\include;C:\CEVA-XM6_SW\CDNN_XM6_NPRS_v20.3.0\CDNN\main\CDNNTools\CDNNAppUtility\hdr;C:\CEVA-XM6_SW\CDNN_XM6_NPRS_v20.3.0\CDNN\main\CDNNExampleApplication\..\CDNNInterface\External;C:\CEVA-XM6_SW\CDNN_XM6_NPRS_v20.3.0\CDNN\main\CDNNExampleApplication\include;C:\CEVA-XM6_SW\CDNN_XM6_NPRS_v20.3.0\CDNN\main\CDNNTools\CDNNAppUtility\include;C:\CEVA-XM6_SW\CDNN_XM6_NPRS_v20.3.0\CDNN\main\CDNNTools\CDNNUtility\include;C:\CEVA-XM6_SW\CDNN_XM6_NPRS_v20.3.0\CDNN\main\CDNNKernelModule\UserXM6OperatorLibrary\include;C:\CEVA-XM6_SW\CDNN_XM6_NPRS_v20.3.0\CDNN\main\CDNNOperationLibrary\UserPCOperationLibrary\include;C:\CEVA-XM6_SW\CDNN_XM6_NPRS_v20.3.0\CDNN\main\CDNNKernelModule\UserPCOperatorLibrary\include;C:\CEVA-XM6_SW\CDNN_XM6_NPRS_v20.3.0\CDNN\main\CDNNNodeLibrary\UserNodeLibrary\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\CEVA-XM6_SW\CDNN_XM6_NPRS_v20.3.0\CDNN\main\include;C:\CEVA-XM6_SW\CDNN_XM6_NPRS_v20.3.0\CDNN\main\..\..\Installs;C:\CEVA-XM6_SW\CDNN_XM6_NPRS_v20.3.0\CDNN\main\..\..\3rdparty;C:\CEVA-XM6_SW\CDNN_XM6_NPRS_v20.3.0\CDNN\main\CDNNExampleApplication\..\CDNNBin\Lib\Win32;C:\CEVA-XM6_SW\CDNN_XM6_NPRS_v20.3.0\CDNN\main\..\..\3rdparty\sdtguard\sgutilLib;C:\CEVA-XM6_SW\CDNN_XM6_NPRS_v20.3.0\CDNN\main\..\..\Installs\install_generic\Accelerators\CNNHWA;C:\CEVA-XM6_SW\CDNN_XM6_NPRS_v20.3.0\CDNN\main\CDNNExampleApplication\..\CDNNCommonDefines\Include;C:\CEVA-XM6_SW\CDNN_XM6_NPRS_v20.3.0\CDNN\main\CDNNExampleApplication\..\CDNNTools\CDNNUtility\Include;C:\CEVA-XM6_SW\CDNN_XM6_NPRS_v20.3.0\CDNN\main\CDNNManager\Interface\Include;C:\CEVA-XM6_SW\CDNN_XM6_NPRS_v20.3.0\CDNN\main\CDNNExampleApplication\hdr;C:\CEVA-XM6_SW\CDNN_XM6_NPRS_v20.3.0\CDNN\main\..\..\Installs\install_generic\include;C:\CEVA-XM6_SW\CDNN_XM6_NPRS_v20.3.0\CDNN\main\CDNNTools\CDNNAppUtility\hdr;C:\CEVA-XM6_SW\CDNN_XM6_NPRS_v20.3.0\CDNN\main\CDNNExampleApplication\..\CDNNInterface\External;C:\CEVA-XM6_SW\CDNN_XM6_NPRS_v20.3.0\CDNN\main\CDNNExampleApplication\include;C:\CEVA-XM6_SW\CDNN_XM6_NPRS_v20.3.0\CDNN\main\CDNNTools\CDNNAppUtility\include;C:\CEVA-XM6_SW\CDNN_XM6_NPRS_v20.3.0\CDNN\main\CDNNTools\CDNNUtility\include;C:\CEVA-XM6_SW\CDNN_XM6_NPRS_v20.3.0\CDNN\main\CDNNKernelModule\UserXM6OperatorLibrary\include;C:\CEVA-XM6_SW\CDNN_XM6_NPRS_v20.3.0\CDNN\main\CDNNOperationLibrary\UserPCOperationLibrary\include;C:\CEVA-XM6_SW\CDNN_XM6_NPRS_v20.3.0\CDNN\main\CDNNKernelModule\UserPCOperatorLibrary\include;C:\CEVA-XM6_SW\CDNN_XM6_NPRS_v20.3.0\CDNN\main\CDNNNodeLibrary\UserNodeLibrary\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>libjpeg.lib;CDNNTarget.lib;CDNNManager.lib;..\CDNNBin\Lib\Win32\Release\CDNNAppUtility.lib;CDNNKernelModuleCommon.lib;CDNNDevice.lib;CDNNPCKernelModule.lib;..\CDNNBin\Lib\Win32\Release\CDNNUtility.lib;CDNNInfrastructure.lib;CDNNXM6Device.lib;..\CDNNBin\Dll\Win32\Release\UserXM6OperatorLibrary.lib;CDNNNeuProSDevice.lib;..\CDNNBin\Dll\Win32\Release\UserPCOperationLibrary.lib;..\CDNNBin\Dll\Win32\Release\UserPCOperatorLibrary.lib;..\CDNNBin\Dll\Win32\Release\UserNodeLibrary.lib;..\..\..\Installs\install_generic\lib\Win32\platform_mgr.lib;..\..\..\Installs\install_generic\Accelerators\NeuProS\NeuProSDriver\lib\Win32\CNNNeuProRuntime.lib;..\CDNNTools\CDNNAppUtility\3rdparty\libjpeg\Windows\Win32\$(Configuration)\libjpeg.lib;..\..\..\Installs\install_xm6\lib\dma_simulator_win32.lib;..\..\..\Installs\install_xm6\lib\csl_win32.lib;C:\CEVA-ToolBox\V18_NeuPro\XM\cevatools\bin\..\fis\ceva-xm6\lib\vs2013\xm6Core_fis.lib;..\CDNNBin\Lib\Win32\Release\CDNNUtility.lib;CDNNNeuProSDevice.lib;..\CDNNBin\Lib\$(Platform)\$(Configuration)\CDNNTarget.lib;..\CDNNBin\Lib\$(Platform)\$(Configuration)\CDNNManager.lib;..\CDNNBin\Lib\$(Platform)\$(Configuration)\CDNNDevice.lib;..\CDNNBin\Lib\$(Platform)\$(Configuration)\CDNNInfrastructure.lib;..\CDNNBin\Lib\$(Platform)\$(Configuration)\CDNNKernelModuleCommon.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:/CEVA-XM6_SW/CDNN_XM6_NPRS_v20.3.0/CDNN/main/../../Installs/install_generic/lib;C:/CEVA-XM6_SW/CDNN_XM6_NPRS_v20.3.0/CDNN/main/../../Installs/install_generic/lib/$(Configuration);C:/CEVA-XM6_SW/CDNN_XM6_NPRS_v20.3.0/CDNN/main/../../Installs/install_generic/lib/Win32;C:/CEVA-XM6_SW/CDNN_XM6_NPRS_v20.3.0/CDNN/main/../../Installs/install_generic/lib/Win32/$(Configuration);C:/CEVA-XM6_SW/CDNN_XM6_NPRS_v20.3.0/CDNN/main/CDNNExampleApplication/../CDNNBin/Lib/Win32;C:/CEVA-XM6_SW/CDNN_XM6_NPRS_v20.3.0/CDNN/main/CDNNExampleApplication/../CDNNBin/Lib/Win32/$(Configuration);C:/CEVA-XM6_SW/CDNN_XM6_NPRS_v20.3.0/CDNN/main/CDNNExampleApplication/../CDNNBin/Dll/Win32;C:/CEVA-XM6_SW/CDNN_XM6_NPRS_v20.3.0/CDNN/main/CDNNExampleApplication/../CDNNBin/Dll/Win32/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/CEVA-XM6_SW/CDNN_XM6_NPRS_v20.3.0/CDNN/main/CDNNExampleApplication/Release/CDNNExampleApplication.lib</ImportLibrary>
+      <LargeAddressAware>true</LargeAddressAware>
+      <ProgramDataBaseFile>C:/CEVA-XM6_SW/CDNN_XM6_NPRS_v20.3.0/CDNN/main/CDNNExampleApplication/Release/CDNNExampleApplication.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="C:\CEVA-XM6_SW\CDNN_XM6_NPRS_v20.3.0\CDNN\main\CDNNExampleApplication\src\ProcessAuxiliary.c" />
+    <ClCompile Include="C:\CEVA-XM6_SW\CDNN_XM6_NPRS_v20.3.0\CDNN\main\CDNNExampleApplication\src\inference.c" />
+    <ClCompile Include="C:\CEVA-XM6_SW\CDNN_XM6_NPRS_v20.3.0\CDNN\main\CDNNExampleApplication\src\mainApplication.c" />
+    <ClInclude Include="C:\CEVA-XM6_SW\CDNN_XM6_NPRS_v20.3.0\CDNN\main\CDNNExampleApplication\hdr\ProcessAuxiliary.h" />
+    <ClInclude Include="C:\CEVA-XM6_SW\CDNN_XM6_NPRS_v20.3.0\CDNN\main\CDNNExampleApplication\hdr\Visualize.h" />
+    <ClInclude Include="C:\CEVA-XM6_SW\CDNN_XM6_NPRS_v20.3.0\CDNN\main\CDNNExampleApplication\hdr\mainApplication.h" />
+    <None Include="cfg\InputConfiguration - 副本mobilenet.cfg">
+    </None>
+    <None Include="C:\CEVA-XM6_SW\CDNN_XM6_NPRS_v20.3.0\CDNN\main\CDNNExampleApplication\cfg\InputConfiguration.cfg">
+    </None>
+    <None Include="C:\CEVA-XM6_SW\CDNN_XM6_NPRS_v20.3.0\CDNN\main\CDNNExampleApplication\cfg\InputConfigurationXM6HW.cfg">
+    </None>
+    <None Include="C:\CEVA-XM6_SW\CDNN_XM6_NPRS_v20.3.0\CDNN\main\CDNNExampleApplication\cfg\generatorCmdLine.cfg">
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\CEVA-XM6_SW\CDNN_XM6_NPRS_v20.3.0\CDNN\main\CDNNTools\CDNNAppUtility\CDNNAppUtility.vcxproj">
+      <Project>{2D4A8F06-9D70-38AB-929E-42D22C52E743}</Project>
+      <Name>CDNNAppUtility</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\CEVA-XM6_SW\CDNN_XM6_NPRS_v20.3.0\CDNN\main\CDNNTools\CDNNUtility\CDNNUtility.vcxproj">
+      <Project>{0D683FC9-19FF-3E71-A427-5C0618D01C92}</Project>
+      <Name>CDNNUtility</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\CEVA-XM6_SW\CDNN_XM6_NPRS_v20.3.0\CDNN\main\CDNNNodeLibrary\UserNodeLibrary\UserNodeLibrary.vcxproj">
+      <Project>{CF4CA5B9-00AC-3085-BB53-89B6355ED980}</Project>
+      <Name>UserNodeLibrary</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\CEVA-XM6_SW\CDNN_XM6_NPRS_v20.3.0\CDNN\main\CDNNOperationLibrary\UserPCOperationLibrary\UserPCOperationLibrary.vcxproj">
+      <Project>{F01ED143-AB3C-31B4-AF6B-4FCB4B85CD19}</Project>
+      <Name>UserPCOperationLibrary</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\CEVA-XM6_SW\CDNN_XM6_NPRS_v20.3.0\CDNN\main\CDNNKernelModule\UserPCOperatorLibrary\UserPCOperatorLibrary.vcxproj">
+      <Project>{4EF5547E-42C3-3F8E-8571-99F55589EB66}</Project>
+      <Name>UserPCOperatorLibrary</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\CEVA-XM6_SW\CDNN_XM6_NPRS_v20.3.0\CDNN\main\CDNNKernelModule\UserXM6OperatorLibrary\UserXM6OperatorLibrary.vcxproj">
+      <Project>{E11D91F7-BF6B-39BE-847B-66520259E6F1}</Project>
+      <Name>UserXM6OperatorLibrary</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

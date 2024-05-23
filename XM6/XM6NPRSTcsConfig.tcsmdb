@@ -1,0 +1,117 @@
+Drivers
+{
+	Driver
+	{
+		Name "Driver"
+		Type "SIMULATION"
+	}
+}
+Systems
+{
+	System
+	{
+		Name "System"
+		Driver "Driver"
+		Clusters
+		{
+			Cluster
+			{
+				Name "Cluster"
+				Target "newTDF"
+				CoreType "NeuPro"
+				Busy "false"
+				Type "Standard"
+				Port "0"
+				Features
+				{
+					Feature
+					{
+						Name "Enable log"
+						Value "false"
+					}
+					Feature
+					{
+						Name "Log path"
+						Value ""
+					}
+					Feature
+					{
+						Name "Log name"
+						Value ""
+					}
+					Feature
+					{
+						Name "Log level"
+						Value "0"
+					}
+				}
+				Cores
+				{
+					Core
+					{
+						Name "Core"
+						Type "NeuPro"
+						Features
+						{
+							Feature
+							{
+								Name "Attributes XML"
+								Value "$file_loc$/XM6CoreCfg.xml"
+							}
+							Feature
+							{
+								Name "Memory XML"
+								Value "$file_loc$/neuProSMemCfg.xml"
+							}
+							Feature
+							{
+								Name "NeuPro Configuration XML"
+								Value "$file_loc$/neuProSCfg.xml"
+							}
+							Feature
+							{
+								Name "Simulation Built-In profiler configuration XML"
+								Value ""
+							}
+							Feature
+							{
+								Name "Simulation CEVA-Xtend Location"
+								Value ""
+							}
+							Feature
+							{
+								Name "Simulation CEVA-Xtend Name"
+								Value ""
+							}
+							Feature
+							{
+								Name "Simulation Calling convention check"
+								Value "false"
+							}
+							Feature
+							{
+								Name "Simulation Exceptions"
+								Value ""
+							}
+							Feature
+							{
+								Name "Simulation Exceptions XML"
+								Value ""
+							}
+							Feature
+							{
+								Name "Simulation Execution Mode"
+								Value "Performance Accurate Mode"
+							}
+							Feature
+							{
+								Name "Simulation VCD trace XML"
+								Value ""
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
