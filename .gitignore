@@ -1,0 +1,9 @@
+# 这是个注释
+# 忽略debug文件夹下all files
+/debug/*
+# 忽略所有exe文件
+*.exe *.obj
+# 不要忽略xml文件
+！*.xml
+# Debug 或者 debug文件夹忽略
+/[Dd]ebug/
